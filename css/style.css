@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+header{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div img{
+    height: 80px;
+    width: 80px;
+}
+header div nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div nav ul li{
+    margin: 0 15px;
+    list-style: none;
+}
+header div nav ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #383838;
+}
+header div nav ul li a:hover{
+    color: #017143;
+}
+.conteudo{
+    width: 100%;
+    padding-left: 5%;
+}
+.sobre{
+    height: 275px;
+    width: 585px;
+    position: absolute;
+    top: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre div h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #383838;
+}
+.sobre div h1 span{
+    font-size: 60px;
+    font-weight: 800;
+    color: #017143;
+}
+.sobre div p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #383838;
+}
+.sobre div button{
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #ffffff;
+    background: #017143;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.sobre div button:hover{
+    background: #015e37;
+}
+.bebidas{
+    height: 180px;
+    width: 400px;
+    position: absolute;
+    bottom: 5px;
+    right: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bebidas img{
+    height: 145px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.bebidas img:hover{
+    margin-bottom: 25px;
+}
+.extra{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    right: -400px;
+    bottom: -400px;
+    border-radius: 100%;
+    background: #017143;
+    transition: 0.5s;
+}
+.extra img{
+    height: 320px;
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+.extra div{
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+.extra div nav{
+    display: flex;
+    flex-direction: column;
+}
+.extra div nav a{
+    height: 50px;
+    width: 50px;
+}
+.extra div nav a img{
+    height: 30px;
+    width: 30px;
+    position: static;
+    transition: 0.25s;
+}
+.extra div a:hover>img{
+    height: 35px;
+    width: 35px;
+}
+@media(max-width: 1200px){
+    header{
+        height: 80px;
+    }
+    header div{
+        height: 100%;
+    }
+    header div img{
+        height: 60px;
+        width: 60px;
+    }
+    header div nav ul li{
+        margin: 0 10px;
+    }
+    header div nav ul li a{
+        font-size: 16px;
+    }
+    .conteudo{
+        padding-left: 5%;
+    }
+    .sobre{
+        height: 225px;
+        width: 455px;
+        top: 105px;
+    }
+    .sobre div h1{
+        font-size: 35px;
+    }
+    .sobre div h1 span{
+        font-size: 45px;
+    }
+    .sobre div p{
+        font-size: 14px;
+    }
+    .sobre div button{
+        font-size: 14px;
+    }
+    .bebidas{
+        height: 140px;
+        width: 280px;
+        right: 375px;
+    }
+    .bebidas img{
+        height: 110px;
+        width: 65px;
+    }
+    .extra{
+        height: 650px;
+        width: 650px;
+        right: -325px;
+        bottom: -325px;
+    }
+    .extra img{
+        height: 260px;
+        width: 140px;
+    }
+    .extra div{
+        width: 50px;
+        top: 100px;
+        left: 285px;
+    }
+    .extra div nav a{
+        height: 45px;
+        width: 45px;
+    }
+    .extra div nav a img{
+        height: 25px;
+        width: 25px;
+        position: static;
+        transition: 0.25s;
+    }
+    .extra div a:hover>img{
+        height: 30px;
+        width: 30px;
+    }
+}
